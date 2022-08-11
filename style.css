@@ -1,0 +1,397 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+body{
+    background-color: black;
+}
+.header .headbar{
+  width: 99.98%;
+  height: 80px;
+  display: flex;
+  background-color: rgb(3, 20, 39)
+}
+.header .headbar h1{
+  margin-top: 7px;
+  margin-left: 1330px;
+  color: aqua;
+  width: 150px;
+}
+.header .headbar nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin-left: -6px;
+}
+.header .headbar nav ul li{
+  margin-left: 80px;
+  margin-top: 25px;
+  font-size: 20px;
+  color: aliceblue;
+}
+.header .headbar nav ul li #sch{
+  border-radius: 25px;
+  width: 500px;
+  padding-left: 15px;
+}
+.header .headbar nav ul li .bi{
+  font-size: 20px;
+}
+.header .musiccontent{
+  width: 90%;
+  height: 80vh;
+  margin-left: 305px;
+  margin-top: -610px;
+  position: relative;
+}
+.header .musiccontent h2{
+  color: white;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.header .musiccontent img{
+  height: 150px;
+  width: 150px;
+  border-radius: 25px;
+}
+
+.header .musiccontent .bi{
+  position: absolute;
+  font-size: 75px;
+  cursor: pointer;
+  transition: 0.2s linear;
+  margin-left: -120px;
+  margin-top: -58px;
+  color: aqua;
+  opacity: 0;
+}.headbar .musiccontent #icon{
+  cursor: pointer;
+}
+.header .musiccontent .bi:hover{
+  color: azure;
+  opacity: 1;
+}
+.header .musiccontent ul {
+  display: flex;
+}
+.header .musiccontent ul li{
+  justify-content: space-between;
+  margin-left: 25px;
+  align-items: center;
+}
+.header .musiccontent ul li h5{
+  text-align: center;
+  color: aqua;
+}
+.header .musiccontent ul li h6{
+  text-align: center;
+  color: rgb(153, 212, 212);
+}
+.header .musiccontent .singers ul{
+  display: flex;
+  list-style: none;
+}
+.header .musiccontent .singers ul li{
+  margin-left: 30px;
+}
+.header .musiccontent .singers img
+{
+  border-radius: 50%;
+}
+.header .musiccontent .singers .bi{
+  position: absolute;
+  font-size: 75px;
+  cursor: pointer;
+  transition: 0.2s linear;
+  margin-left: -120px;
+  margin-top: -58px;
+  color: aqua;
+  opacity: 0;
+}
+.header .musiccontent .singers .bi:hover{
+  color: azure;
+  opacity: 1;
+}
+.header .musiccontent .genre ul li{
+  margin-left: 40px;
+}
+.header .musiccontent .genre img{
+  border-radius: 50%;
+}
+.header .musiccontent .Series ul li{
+  margin-left: 40px;
+}
+.header .playlist{
+  margin-top: -15px;
+    width: 20%;
+    height: 85vh;
+    color: white;
+    background-color: black;
+  }
+  .header .masterplay{
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 3px 8px rgb(11, 47, 85);
+  }
+  .header .playlist h1{
+    font-size: 25px;
+    margin: 25px 0px 0px 20px;
+  }
+  .header .playlist .listplay{
+    margin: 25px 0px 20px 20px;
+  }
+  .header .playlist .listplay h4{
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: gray;
+    cursor: pointer;
+    transition: .3s linear;
+    display: flex;
+    align-items: center;
+  }
+  .header .playlist .listplay h4:hover{
+    color: aliceblue;
+  }
+  .header .playlist .listplay h4 span{
+    position: relative;
+  }
+  .header .playlist .listplay h4 span:hover{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+  }
+  .header .playlist .listplay h4 .bi{
+    display: none;
+  }
+  .header .playlist .listplay .active{
+    color: aqua;
+  }
+  .header .playlist .listplay .active span{
+    display: none;
+  }
+  .header .playlist .listplay .active .bi{
+    display: flex;
+    margin-right: 20px;
+  }
+  .header .playlist .menusong
+  {
+    width: 100%;
+    height: 405px;
+  }
+  .header .playlist .menusong li
+  {
+    position: relative;
+    list-style: none;
+    padding: 5px 5px 5px 18px;
+    display: flex;
+    color: aqua;
+    margin-top: 10px;
+  }
+  .header .playlist .menusong li span
+  {
+    font-size: 14px;
+    font-weight: bold;
+    color: grey;
+
+  }
+  .header .playlist .menusong li img{
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+  }
+  .header .playlist .menusong li h5{
+    font-size: 15px;
+    margin-left: 27px;
+    color: aliceblue;
+  }
+  .header .playlist .menusong li h5 .subtitle{
+    font-size: 12px;
+    margin-left: 2px;
+    color: grey;
+  }
+  .header .playlist .menusong li h5 .bi{
+    position: absolute;
+    left: 270px;
+    top: 15px;
+  }
+  .header .playlist .songitem .bi{
+    position: absolute;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.2s linear;
+    margin-left: 2px;
+    margin-top: -10px;
+    color: aqua;
+  }
+  .header .playlist .songitem .bi:hover{
+    color: azure;
+    opacity: 1;
+  }
+  .header #play{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+  }
+.header .masterplay{
+  display: flex;
+  align-items: center;
+  margin-top: 2px;
+}
+.header .masterplay .wave{
+  width: 30px;
+  height: 30px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 800px;
+}
+.header .masterplay .wave .wave1{
+  width: 3px;
+  height: 10px;
+  margin-right: 3px;
+  border: 10px 10px 0px 0px;
+  background-color: aqua;
+  animation: ease-in;
+}
+.header .masterplay .wave .wave1:nth-child(2)
+{
+  height: 14px;
+  animation-delay: .4s;
+}
+.header .masterplay .wave .wave1:nth-child(3)
+{
+  height: 8px;
+  animation-delay: .8s;
+}
+.header .masterplay .active2 .wave1{
+  animation: wave 0.7s linear infinite;
+}
+.header .masterplay .active2 .wave1:nth-child(2)
+{
+  animation-delay: .4s;
+}
+.header .masterplay .active2 .wave1:nth-child(3)
+{
+  animation-delay: .8s;
+}
+@keyframes wave{
+  0%{
+    height: 10px;
+  }
+  50%{
+    height: 15px;
+  }
+  100%{
+    height: 10px;
+  }
+}
+.header .masterplay img{
+  height: 38px;
+  width: 38px;
+}
+.header .masterplay h5{
+  margin-left: 15px;
+  margin-top: 2px;
+ font-size: 15px;
+ color: aliceblue;
+}
+.header .masterplay .subtitle{
+  color: grey;
+  margin-left: 2px;
+  font-size: 10px;
+}
+.header .masterplay .icon{
+  font-size: 20px;
+ margin: 0px 50px 0px 40px;
+ color: aqua;
+}
+.header .masterplay .icon .bi{
+  cursor: pointer;
+  outline: none;
+}
+.header .masterplay .icon #masterplay{
+  cursor: pointer;
+}
+.header .masterplay .icon .bi:nth-child(2){
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 1px 3px 0px 6px;
+  margin: 0px 5px;
+  transition: .2s linear;
+}
+.header .masterplay span{
+  color: aqua;
+  width: 32px;
+  font-size: 15px;
+}
+.header .masterplay span #currentstart{
+ margin: 0px 0px 0px 20px;
+}
+.header .masterplay .bar{
+  position: relative;
+  width: 45%;
+  height: 3px;
+  background: white;
+  margin: 0px 15px 0px 10px;
+}
+.header .masterplay .bar .bar2{
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+.header .masterplay .bar .dot{
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: aqua;
+  border-radius: 50%;
+  left: 0%;
+  top: -1px;
+  transition: 1s linear;
+}
+.header .masterplay .bar .dot::before{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-width: 2px;
+  border-color: aqua;
+  border-radius: 50%;
+  left: -3px;
+  top: -2.5px;
+  box-shadow: inset 0px 0px 3px aqua;
+}
+.header .masterplay .bar input{
+  position: absolute;
+  width: 100%;
+  height: 9px;
+  top: -2px;
+  left: 0;
+  cursor: pointer;
+  z-index: 99999999;
+  transition: 3s linear;
+  opacity: 0;
+}
+.header .masterplay .vol{
+  position: relative;
+  height: 20px;
+  width: 20px;
+  color: aqua;
+  margin-left: 20px;
+}
+.header .masterplay .vol .bi{
+  position: absolute;
+  font-size: 22px;
+  color: aqua;
+  margin-left: 2px;
+  margin-top: -6px;
+}
+.header .masterplay .vol input{
+  position: absolute;
+  margin-left: 30px;
+  width: 80px;
+  height: 3px;
+  top: 9px;
+  cursor: pointer;
+  background-color: black;
+}
