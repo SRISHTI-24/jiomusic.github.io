@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saavn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <section class="header">
+      <div class="headbar">
+        <nav>
+          <ul>
+            <li>
+              Home
+            </li>
+            <li >
+              Genre
+            </li>
+            <li>
+              My Library
+            </li>
+            <li>
+              <input type="text" value="" id="sch"  placeholder="Search here....">
+              
+            </li>
+            <li>
+              New Surprise
+            </li>
+            <li>
+              <i class="bi bi-person-circle"></i>
+            </li>
+          </ul>
+        </nav>
+      </div>
+        <div class="playlist">
+            <h1>My Library</h1>
+            <div class="listplay">
+              <h4 class="active"><span></span><i class="bi bi-music-note-list"></i>Playlist</h4>
+              <h4 class="active"><span></span><i class="bi bi-music-note-list"></i>Last Played</h4>
+              <h4 class="active"><span></span><i class="bi bi-music-note-list"></i>Recommends</h4>
+            </div>
+            <div class="menusong">
+              <li class="songitem">
+                <span>01.</span>
+                <img src="kb.jpg" alt="">
+                <h5>
+                  Bekhyali
+                  <div class="subtitle">
+                      Sachet Tandon
+                  </div>
+                  <button id="playlistbtn" onclick="playlistplaypause()"><i class="bi bi-play-circle"></i></button>
+                </h5>
+              </li>
+              <li class="songitem">
+                <span>02.</span>
+                <img src="Kesariya.jpg" alt="">
+                <h5>
+                  Kesariya
+                  <div class="subtitle">
+                      Arijit Singh
+                  </div>
+                  <button id="playlistbtn1" onclick="playlistplaypause1()"><i class="bi bi-play-circle"></i></button>
+                </h5>
+              </li>
+              <li class="songitem">
+                <span>03.</span>
+                <img src="perfect.jpg" alt="">
+                <h5>
+                  perfect
+                  <div class="subtitle">
+                      Ed Sheeran
+                  </div>
+                  <button id="playlistbtn2" onclick="playlistplaypause2()"><i class="bi bi-play-circle"></i></button>
+                </h5>
+              </li>
+              <li class="songitem">
+                <span>04.</span>
+                <img src="rk.jpg" alt="">
+                <h5>
+                  Tum Prem Ho
+                  <div class="subtitle">
+                      Radhakrishn
+                  </div>
+                  <button id="playlistbtn3" onclick="playlistplaypause3()"><i class="bi bi-play-circle"></i></button>
+                </h5>
+              </li>
+              <li class="songitem">
+                <span>05.</span>
+                <img src="lag.jpg" alt="">
+                <h5>
+                  Lag ja gale
+                  <div class="subtitle">
+                      Lata Mangeshkar
+                  </div>
+                  <button id="playlistbtn4" onclick="playlistplaypause4()"><i class="bi bi-play-circle"></i></button>
+                </h5>
+              </li>
+              <li class="songitem">
+                <span>06.</span>
+                <img src="gl.jpg" alt="">
+                <h5>
+                  Galliyan
+                  <div class="subtitle">
+                      Ankit Tiwari
+                  </div>
+                  <button id="playlistbtn5" onclick="playlistplaypause5()"><i class="bi bi-play-circle"></i></button>
+                </h5>
+              </li>
+            </div>
+        </div>
+        <div class="musiccontent">
+          <h2>Trending</h2><br>
+          <ul>
+            <li>
+              <img src="kesariya - Copy.jpg" alt="">
+              <button id="playpausebtn" onclick="playpause();"><i class="bi bi-play-circle-fill" ></i></button>
+              <h5>Kesariya</h5>
+              <h6>Arijit Singh</h6>
+            </li>
+            <li>
+              <img src="hit.jpg" alt="">
+              <button id="playpausebtn1" onclick="playpause1();"><i class="bi bi-play-circle-fill" ></i></button>
+              <h5>Kitni Hasi Hogi</h5>
+              <h6>Arijit Singh</h6>
+            </li>
+            <li>
+              <img src="fitoor.jpg" alt="">
+              <button id="playpausebtn2" onclick="playpause2();"><i class="bi bi-play-circle-fill" ></i></button>
+              <h5>Fitoor</h5>
+              <h6>Arijit Singh, Neeti Mohan</h6>
+            </li>
+            <li>
+              <img src="shaamat.jpg" alt="">
+              <button id="playpausebtn3" onclick="playpause3();"><i class="bi bi-play-circle-fill" ></i></button>
+              <h5>Shaamat</h5>
+              <h6>Ankit Tiwari, Tara Sutaria</h6>
+            </li>
+            <li>
+              <img src="mehbooba.jpg" alt="">
+              <button id="playpausebtn31" onclick="playpause31();"><i class="bi bi-play-circle-fill" ></i></button>
+              <h5>Mehbooba</h5>
+              <h6>Ananya Bhat</h6>
+            </li>
+            <li>
+              <img src="jug.jpg" alt="">
+              <button id="playpausebtn32" onclick="playpause32();"><i class="bi bi-play-circle-fill" ></i></button>
+              <h5>Jug Jug Jeeyo</h5>
+              <h6>Various Artists</h6>
+            </li>
+          </ul>
+          <div class="singers">
+            <h2>Artists</h2><br>
+          <ul>
+            <li>
+              <img src="atif.jpg" alt="">
+              <button id="singerbtn1" onclick="playpause6();"><i class="bi bi-play-circle-fill" ></i></button>
+              <h6>Atif Aslam</h6>
+            </li>
+            <li>
+              <img src="arman.jpg" alt="">
+              <button id="singerbtn2" onclick="playpause7();"><i class="bi bi-play-circle-fill" ></i></button>
+              <h6>Arman Malik</h6>
+            </li>
+            <li>
+              <img src="shreya.jpg" alt="">
+              <button id="singerbtn3" onclick="playpause8();"><i class="bi bi-play-circle-fill" ></i></button>
+              <h6>Shreya Ghoshal</h6>
+            </li>
+            <li>
+              <img src="arijit.jpg" alt="">
+              <button id="singerbtn4" onclick="playpause9();"><i class="bi bi-play-circle-fill" ></i></button>
+              <h6>Arijit Singh</h6>
+            </li>
+            <li>
+              <img src="palak.jpg" alt="">
+              <button id="singerbtn5" onclick="playpause10();"><i class="bi bi-play-circle-fill" ></i></button>
+              <h6>Palak Muchhal</h6>
+            </li>
+            <li>
+              <img src="kishor sir.jpg" alt="">
+              <button id="singerbtn6" onclick="playpause11();"><i class="bi bi-play-circle-fill" ></i></button>
+              <h6>Kishor Kumar</h6>
+            </li>
+          </ul>
+          </div>
+          <div class="genre">
+            <h2>Genre & Moods</h2>
+            <ul>
+              <li>
+                <img src="unplugged.jpg" alt="">
+                <h6>Just Unplugged</h6>
+              </li>
+              <li>
+                <img src="diya.jpg" alt="">
+                <h6>Spiritual Songs</h6>
+              </li>
+              <li>
+                <img src="romance.jpg" alt="">
+                <h6>Romance</h6>
+              </li>
+              <li>
+                <img src="chill.jpg" alt="">
+                <h6>Retro-Chill</h6>
+              </li>
+              <li>
+                <img src="nacho.jpg" alt="">
+                <h6>Party All Night</h6>
+              </li>
+              <li>
+                <img src="desi.jpg" alt="">
+                <h6>Desi Hip-Hop</h6>
+              </li>
+            </ul>
+          </div>
+          <div class="Series">
+            <h2>Top Picks</h2>
+            <ul>
+              <li>
+                <img src="bkb.jpg" alt=""><br>
+                <h6>Broken But Beautiful</h6>
+              </li>
+              <li>
+                <img src="kabir.jpg" alt=""><br>
+                <h6>Kabir Singh</h6>
+              </li>
+              <li>
+                <img src="kk.jpg" alt=""><br>
+                <h6>Best Of KK</h6>
+              </li>
+              <li>
+                <img src="ddlj.jpg" alt=""><br>
+                <h6>90's Special</h6>
+              </li>
+              <li>
+                <img src="rain.jpg" alt=""><br>
+                <h6>Love In Rain</h6>
+              </li>
+              <li>
+                <img src="mashup.jpg" alt=""><br>
+                <h6>Bollywood Mashups</h6>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+
+        <div class="player">
+          <audio id="audio">
+            <source src="kesariya.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="audio1">
+            <source src="kitni hasi hogi.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="audio2">
+            <source src="fitoor.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="audio3">
+            <source src="shaamat.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="audio4">
+            <source src="mehbooba.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="audio5">
+            <source src="Rangi Sari.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="audio6">
+            <source src="aa.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="audio7">
+            <source src="am.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="audio8">
+            <source src="sg.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="audio9">
+            <source src="as.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="audio10">
+            <source src="pm.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="audio11">
+            <source src="kkumar.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="audiop1">
+            <source src="bekhayali.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="audiop2">
+            <source src="kesariya.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="audiop3">
+            <source src="perfect.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="audiop4">
+            <source src="tum prem ho.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="audiop5">
+            <source src="03. Lag Ja Gale.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="audiop6">
+            <source src="galliyan.mp3" type="audio/mpeg">
+          </audio>
+          
+        </div>
+        
+        
+    </section>
+    <script>
+      var audio = document.getElementById('audio');
+      var playpausebtn = document.getElementById('playpausebtn');
+      var count=0;
+      function playpause(){
+        if(count==0)
+          {
+            count=1;
+            audio.play();
+          }
+          else{
+            count=0;
+            audio.pause();
+          }
+      }
+      var audio1 = document.getElementById('audio1');
+      var playpausebtn1 = document.getElementById('playpausebtn1');
+      var count1=0;
+      function playpause1(){
+        if(count1==0)
+          {
+            count1=1;
+            audio1.play();
+          }
+          else{
+            count1=0;
+            audio1.pause();
+          }
+      }
+      var audio2 = document.getElementById('audio2');
+      var playpausebtn2 = document.getElementById('playpausebtn2');
+      var count1=0;
+      function playpause2(){
+        if(count1==0)
+          {
+            count1=1;
+            audio2.play();
+          }
+          else{
+            count1=0;
+            audio2.pause();
+          }
+      }
+      var audio3 = document.getElementById('audio3');
+      var playpausebtn3 = document.getElementById('playpausebtn3');
+      var count1=0;
+      function playpause3(){
+        if(count1==0)
+          {
+            count1=1;
+            audio3.play();
+          }
+          else{
+            count1=0;
+            audio3.pause();
+          }
+      }
+      var audio31 = document.getElementById('audio4');
+      var playpausebtn31 = document.getElementById('playpausebtn31');
+      var count1=0;
+      function playpause31(){
+        if(count1==0)
+          {
+            count1=1;
+            audio31.play();
+          }
+          else{
+            count1=0;
+            audio31.pause();
+          }
+      }
+      var audio32 = document.getElementById('audio5');
+      var playpausebtn32 = document.getElementById('playpausebtn32');
+      var count1=0;
+      function playpause32(){
+        if(count1==0)
+          {
+            count1=1;
+            audio32.play();
+          }
+          else{
+            count1=0;
+            audio32.pause();
+          }
+      }
+      var audio6 = document.getElementById('audio6');
+      var playpausebtn4 = document.getElementById('singerbtn1');
+      var count1=0;
+      function playpause6(){
+        if(count1==0)
+          {
+            count1=1;
+            audio6.play();
+          }
+          else{
+            count1=0;
+            audio6.pause();
+          }
+      }
+      var audio7 = document.getElementById('audio7');
+      var playpausebtn4 = document.getElementById('singerbtn2');
+      var count1=0;
+      function playpause7(){
+        if(count1==0)
+          {
+            count1=1;
+            audio7.play();
+          }
+          else{
+            count1=0;
+            audio7.pause();
+          }
+      }
+      var audio8 = document.getElementById('audio8');
+      var playpausebtn4 = document.getElementById('singerbtn3');
+      var count1=0;
+      function playpause8(){
+        if(count1==0)
+          {
+            count1=1;
+            audio8.play();
+          }
+          else{
+            count1=0;
+            audio8.pause();
+          }
+      }
+      var audio9 = document.getElementById('audio9');
+      var playpausebtn4 = document.getElementById('singerbtn4');
+      var count1=0;
+      function playpause9(){
+        if(count1==0)
+          {
+            count1=1;
+            audio9.play();
+          }
+          else{
+            count1=0;
+            audio9.pause();
+          }
+      }
+      var audio10 = document.getElementById('audio10');
+      var playpausebtn5 = document.getElementById('singerbtn5');
+      var count1=0;
+      function playpause10(){
+        if(count1==0)
+          {
+            count1=1;
+            audio10.play();
+          }
+          else{
+            count1=0;
+            audio10.pause();
+          }
+      }
+      var audio11 = document.getElementById('audio11');
+      var playpausebtn6 = document.getElementById('singerbtn6');
+      var count1=0;
+      function playpause11(){
+        if(count1==0)
+          {
+            count1=1;
+            audio11.play();
+          }
+          else{
+            count1=0;
+            audio11.pause();
+          }
+      }
+      var audiop1 = document.getElementById('audiop1');
+      var playlistbtn = document.getElementById('playlistbtn');
+      var count1=0;
+      function playlistplaypause(){
+        if(count1==0)
+          {
+            count1=1;
+            audiop1.play();
+          }
+          else{
+            count1=0;
+            audiop1.pause();
+          }
+      }
+      var audiop2 = document.getElementById('audiop2');
+      var playlistbtn1 = document.getElementById('playlistbtn1');
+      var count1=0;
+      function playlistplaypause1(){
+        if(count1==0)
+          {
+            count1=1;
+            audiop2.play();
+          }
+          else{
+            count1=0;
+            audiop2.pause();
+          }
+      }
+      var audiop3 = document.getElementById('audiop3');
+      var playlistbtn2 = document.getElementById('playlistbtn2');
+      var count1=0;
+      function playlistplaypause2(){
+        if(count1==0)
+          {
+            count1=1;
+            audiop3.play();
+          }
+          else{
+            count1=0;
+            audiop3.pause();
+          }
+      }
+      var audiop4 = document.getElementById('audiop4');
+      var playlistbtn3 = document.getElementById('playlistbtn3');
+      var count1=0;
+      function playlistplaypause3(){
+        if(count1==0)
+          {
+            count1=1;
+            audiop4.play();
+          }
+          else{
+            count1=0;
+            audiop4.pause();
+          }
+      }
+      var audiop5 = document.getElementById('audiop5');
+      var playlistbtn4 = document.getElementById('playlistbtn4');
+      var count1=0;
+      function playlistplaypause4(){
+        if(count1==0)
+          {
+            count1=1;
+            audiop5.play();
+          }
+          else{
+            count1=0;
+            audiop5.pause();
+          }
+      }
+      var audiop6 = document.getElementById('audiop6');
+      var playlistbtn5 = document.getElementById('playlistbtn5');
+      var count1=0;
+      function playlistplaypause5(){
+        if(count1==0)
+          {
+            count1=1;
+            audiop6.play();
+          }
+          else{
+            count1=0;
+            audiop6.pause();
+          }
+      }
+    </script>
+</body>
+</html>
